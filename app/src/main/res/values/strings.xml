@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MusicWiki1</string>
+    <string name="Name">Name</string>
+    <string name="choose_from_top_10_genre_to_start_with">Choose from top 10 genre to start with</string>
+    <string name="musicwiki">MusicWiki</string>
+    <string name="welcome">Welcome!</string>
+    <string name="heading">HEADING</string>
+    <string name="sammury">sammury</string>
+    <string name="summary">summary</string>
+    <string name="tracks">Tracks</string>
+    <string name="album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="artistname">ArtistName</string>
+    <string name="click_for_more_options">Click for more options</string>
+</resources>

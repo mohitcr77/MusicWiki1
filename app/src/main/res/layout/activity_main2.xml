@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant1"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tagHeading"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tagsummary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tagHeading"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:text="@string/summary"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideInset"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_below="@+id/tagsummary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonartist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border1"
+            android:text="@string/artist"
+            />
+
+        <Button
+            android:id="@+id/buttonalbum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border1"
+            android:text="@string/album"
+            android:onClick="loadalbum"/>
+
+        <Button
+            android:id="@+id/buttonTracks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border1"
+            android:text="@string/tracks"
+            android:clickable="true"
+            android:onClick="loadtracks"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@id/linearlayout1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/musicwiki" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/musicwiki" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout2"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/musicwiki" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/musicwiki" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/artisttv1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"
+        android:textColor="#05DFD8"
+        android:text="@string/artistname"
+        android:layout_below="@id/linearlayout1"
+        android:onClick="onclickalbum"/>
+
+    <TextView
+        android:id="@+id/artisttv2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearlayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/artistname"
+        android:textColor="#9609ED"
+        android:textSize="20sp"
+        android:onClick="onclickalbum"/>
+
+    <TextView
+        android:id="@+id/artisttv3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearlayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/artistname"
+        android:textColor="#CA3A57"
+        android:textSize="20sp"
+        android:onClick="onclickalbum"/>
+
+    <TextView
+        android:id="@+id/artisttv4"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearlayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/artistname"
+        android:textColor="#5A5CDA"
+        android:textSize="20sp"
+        android:onClick="onclickalbum"/>
+
+</RelativeLayout>
